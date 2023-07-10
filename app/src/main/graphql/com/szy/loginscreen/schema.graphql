@@ -1,0 +1,21 @@
+query GetBuildings {
+    buildings {
+        buildingId
+        address
+        imageUrl
+        baths
+        beds
+        rent
+    }
+}
+
+mutation AddBuilding($address: String!, $baths: Int!, $beds: Int!, $rent: Float!) {
+    addBuilding(address: $address, baths: $baths, beds: $beds, rent: $rent) {
+        buildingId
+        address
+        imageUrl
+        baths
+        beds
+        rent
+    }
+}

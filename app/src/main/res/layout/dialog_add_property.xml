@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/bathsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Baths"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/bedsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Beds"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/rentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rent"
+        android:minHeight="48dp" />
+
+</LinearLayout>

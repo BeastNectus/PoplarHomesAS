@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hi👋🏻"
+                android:id="@+id/loginHiText"
+                android:textSize="36sp"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText"/>
+
+            <TextView
+                android:id="@+id/loginText"
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:text="Welcome to"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/loginSubText"
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
+                android:text="Poplar Homes"
+                android:textAlignment="textStart"
+                android:textColor="@color/orange"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/username"
+                android:labelFor="@+id/username"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="Username"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="40dp"
+                android:inputType="text" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/password"
+                android:background="@drawable/custom_edittext"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:hint="password"
+                android:padding="8dp"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/orange"
+                android:text="@string/login_button_label"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/signupText"
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:padding="8dp"
+                android:text="@string/signup_label"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
